@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results</title>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="results-style.css" /> 
+</head>
+
+<!-- page content goes into <body> -->
+<body>
+    <div class="bookmark-tab">
+        <a href="index.html" class="btn">Home Page</a>
+    </div>
+
+    <div class="title-container">
+        <div class="title">
+            <p>Results</p>
+        </div>
+    </div>
+    <div class="information">
+        <div class="subtitles">
+            <p>Studio Results</p>
+                <div class="text">
+                    <ul>
+                        <p class="headers"> Version A: </p>
+                        <ul>
+                            <img src="results/studio-part-a-results.png" alt="results from a testing in studio"  width="800" height="800">
+
+                        </ul>
+
+                        <p class="headers"> Version B: </p>
+                        <ul>
+                            <img src="results/studio-b-test-results.png" alt="results from b testing in studio" width="800" height="800">
+
+                        </ul>
+
+                    </ul>
+                    
+                </div>
+            <p>Misclick Rate Results</p>
+                <div class="text">
+                    <ul>
+                        <img src="results/misclick results.png" alt="misclick rate results"  width="400" height="300">
+                        <li> A one-tailed t-test is appropriate to use when one expects one group to be greater or lesser than the other. For this metric, we opted for a one-tail t-test because I hypothesize the misclick rate of Version A to be greater than Version B. </li>
+                        <li> P-value represents the probability of observing if the null hypothesis is true. A p-value less than the significance level (typically 0.05) means you reject the null hypothesisis. 
+                             The p-value for a t-statistic of 2.924988129 for a one-tailed test is 0.00309 (1 - 0.9969066735). The p-value is less than 0.05 so we reject the null hypothesis and have found statistically significant evidence that the alternative hypothesis is true.</li>
+                        <li> Other important findings that were revealed from this analysis can be seen through the averages of both verions where Verion A had an average misclick rate of 0.2058823529 whereas Version's B was 0. This tells us there were no misclicks on Version B but some on Version A.</li>
+                        <li> We reject the null hypothesis.</li>
+                    </ul>
+                </div>
+
+            <p>Time Spent On Page Results</p>
+                <div class="text">
+                    <ul>
+                        <img src="results/time spent on page results.png" alt="time spent on page results"  width="400" height="300">
+                        <li> A one-tailed t-test is appropriate to use when one expects one group to be greater or lesser than the other. For this metric, I hypothesize that users will spend more time viewing Version A compared to Version B hence my focus is very directional for this test.</li>
+                        <li> Using what we know about p-values from above, the p-value for a t-statistic of 2.013074381 for a one-tailed test is 0.02481 (1 - 0.9751880081). The p-value is less than 0.05 so we reject the null hypothesis and have found statistically significant evidence that the alternative hypothesis is true.</li>
+                        <li> Other important findings that were revealed from this analysis can be seen through the averages of Verion A and Version's B time spent on a page. The average for Version A was 12860.44 milliseconds whereas Version B had an average of 8258.74 milliseconds. From these averages alone, we 
+                             can see that a user spends more time on Version A's page than they do on Version B's.
+                        </li>
+                        <li> We reject the null hypothesis.</li>
+                    </ul>
+                </div>
+
+            <p>Time To First Click Results</p>
+                <div class="text">
+                    <ul>
+                        <img src="results/time to first click results.png" alt="time to first click results"  width="400" height="300">
+                        <li> A one-tailed t-test is appropriate to use when one expects one group to be greater or lesser than the other. For this metric, I hypothesize that users will spend more time making the first click with Version than they will to make a first click on Version.</li>
+                        <li> Using what we know about p-values from above, the p-value for a t-statistic of 2.241546503 for a one-tailed test is 0.01489 (1 - 0.985114926730261). The p-value is less than 0.05 so we reject the null hypothesis and have found statistically significant evidence that the alternative hypothesis is true.</li>
+                        <li> Other important findings that were revealed from this analysis can be seen through the averages time (in milliseconds) it took for the user to execute his/her first click. 
+                             The average for Version A was 5542.9411 milliseconds whereas Version B had an average of 3669.5806 milliseconds. From these averages alone, we 
+                            can see that a user spends more time on Version A to make the first click than they did on Version B's.</li>
+                        <li> We reject the null hypothesis.</li>
+                    </ul>
+                </div>
+
+            <p>Summary Statistics</p>
+                <div class="text">
+                    <ul>
+                        <p> Looking at Version A's mean, median, mode, and variance values:
+                            <ul>
+                                <li>Misclick Rates</li>
+                                    <ul>
+                                        <li>mean: 0.20588</li>
+                                        <li>median: 0</li>
+                                        <li>mode: 0</li>
+                                        <li>variance: 0.168</li>
+                                    </ul>
+
+                                <li>Time Spent on Page Rates</li> 
+                                    <ul>
+                                        <li>mean: 12860.44118</li>
+                                        <li>median: 8526.5</li>
+                                        <li>mode: n/a</li>
+                                        <li>variance: 140609949.042</li>
+                                    </ul>
+                                <li>Time Spent to Make the First Click Rates</li> 
+                                    <ul>
+                                        <li>mean: 5542.94118</li>
+                                        <li>median: 3788.5</li>
+                                        <li>mode: n/a</li>
+                                        <li>variance: 19411963.572</li>
+                                    </ul>
+                            </ul>
+                        </p>
+
+                        <p> Looking at Version B's mean, median, mode, and variance values:
+                            <ul>
+                                <li>Misclick Rates</li> 
+                                    <ul>
+                                        <li>mean: 0</li>
+                                        <li>median: 0</li>
+                                        <li>mode: 0</li>
+                                        <li>variance: 0</li>
+                                    </ul>
+
+                                <li>Time Spent on Page Rates</li> 
+                                    <ul>
+                                        <li>mean: 8258.74194</li>
+                                        <li>median: 7274</li>
+                                        <li>mode: n/a</li>
+                                        <li>variance: 33783195.331</li>
+                                    </ul>
+
+                                <li>Time Spent to Make the First Click Rates</li> 
+                                    <ul>
+                                        <li>mean: 3669.58065</li>
+                                        <li>median: 3370</li>
+                                        <li>mode: n/a</li>
+                                        <li>variance: 3953400.252</li>
+                                    </ul>
+                            </ul>
+                        </p>
+
+                        <p> Overall, we collected about an equal amount of data points for Version A and Version B with 33 vs 30 entries respectively. It is evident from our results that Version B performs better than Version A in terms of misclick rates, time spent on page rates, and based on the time it takes to make a first click rates. 
+                            Version B had proven to be the more efficient variation of this website. 
+                        </p>
+
+                    </ul>
+                </div>
+
+            <p>Takeaways</p>
+                <div class="text">
+                    <ul>
+                        <li> The wording of your hypothesis is very important and it essential in showcasing the direction of the expected effect.</li>
+                        <li> Selecting the appropriate statistical test is crucial to ensuring you are explaining and drawing valid conclusions from your data. </li>
+                        <li> The design decisions an engineer makes holds significant weight in the success of their product.</li>
+                    </li>
+
+                    </ul>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
